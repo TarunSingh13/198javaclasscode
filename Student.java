@@ -1,14 +1,9 @@
-package com.oops1;
+package Abstract;
 
-public class Student {
-    String name;
-    int rollNo;
-    float marks;
-    public Student () {
-    }
-    public Student (String name, int rollNo,float marks) {
-        this.name = name;
-        this.rollNo = rollNo;
-        this.marks = marks;
+abstract class Student {
+    abstract void attendclass(String name);
+    abstract void giveExam(String name);
+    void Greeting(String name) {
+        System.out.println(name + " , you are welcome !");
     }
 }
